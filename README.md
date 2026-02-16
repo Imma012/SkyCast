@@ -1,4 +1,4 @@
-# SkyCast ☁️
+# SkyCast
 
 A beautiful and feature-rich weather application built with React.
 
