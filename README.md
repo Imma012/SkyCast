@@ -1,16 +1,68 @@
-# React + Vite
+# SkyCast ☁️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful and feature-rich weather application built with React.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌡️ Real-time weather data and 7-day forecast
+- 🌍 Multiple saved locations
+- 🚨 Weather alerts for severe conditions
+- 🌫️ Air quality index monitoring
+- ☀️ UV index with safety recommendations
+- 🎯 Smart activity suggestions
+- 👔 Outfit recommendations based on weather
+- 📊 Compare weather across multiple cities
+- 📈 Historical weather data (last 5 days)
+- ✈️ Travel planning with multi-city itinerary
+- 🗺️ Interactive weather radar
+- 🌙 Dark/Light mode
+- 🌡️ Celsius/Fahrenheit toggle
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone this repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+3. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. Add your API key in `WeatherApp.jsx`:
+   ```javascript
+   const API_KEY = 'your_api_key_here';
+   ```
+
+5. Start the app:
+   ```bash
+   npm start
+   ```
+
+## Dependencies
+
+- React
+- lucide-react (icons)
+- recharts (charts)
+
+Install with:
+```bash
+npm install lucide-react recharts
+```
+
+## Usage
+
+- **Search**: Type a city name and press Enter
+- **Current Location**: Click the location pin icon
+- **Save Locations**: Click the heart icon to save a city
+- **Compare Cities**: Click "Compare Cities" and add up to 4 cities
+- **View History**: Click "Historical Data" to see weather trends
+- **Plan Travel**: Click "Travel Planning" to create an itinerary
+- **Weather Radar**: Click "Weather Radar" to see precipitation map
+
+## Made By
+
+SkyCast was created by me as a comprehensive weather tracking solution.
+
+## License
+
+MIT
