@@ -51,7 +51,7 @@ const WeatherApp = () => {
         `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
       );
       const aqiRes = await fetch(
-        `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+        `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`
       );
       
       const weatherData = await weatherRes.json();
@@ -88,7 +88,7 @@ const WeatherApp = () => {
       
       // Fetch air quality using coordinates from weather data
       const aqiRes = await fetch(
-        `http://api.openweathermap.org/data/2.5/air_pollution?lat=${weatherData.coord.lat}&lon=${weatherData.coord.lon}&appid=${API_KEY}`
+        `https://api.openweathermap.org/data/2.5/air_pollution?lat=${weatherData.coord.lat}&lon=${weatherData.coord.lon}&appid=${API_KEY}`
       );
       const aqiData = await aqiRes.json();
       
